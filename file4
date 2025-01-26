@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double mark1 = sc.nextDouble();
+        double mark2 = sc.nextDouble();
+        double mark3 = sc.nextDouble();
+        double total = mark1 + mark2 + mark3;
+        double average = total / 3;
+        System.out.printf("Total : %.0f\n", total);   // Total is an integer value
+        System.out.printf("Average : %.2f\n", average); // Average rounded to 2 decimal places
+        sc.close();
+    }
+}
