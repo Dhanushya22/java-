@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double diameter = sc.nextDouble();
+        double side = Math.sqrt(3) * diameter;
+        double length = side * 3;
+        double breadth = 4 * diameter;
+        System.out.printf("Side : %.2f\n", side);
+        System.out.printf("Length : %.2f\n", length);
+        System.out.printf("Breadth : %.2f\n", breadth);
+        sc.close();
+    }
+}
