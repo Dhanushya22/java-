@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    static int[] notes = {100, 50, 10, 5, 2, 1};  // Currency denominations
+
+    public static int getMinNotes(int amount) {
+        if (amount == 0) {
+            return 0;
+        }
+
+        int count = 0;
+        for (int note : notes) {
+            if (amount >= note) {
+                count += amount / note;
+                amount = amount % note;
+            }
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        System.out.println(getMinNotes(N));
+        sc.close();
+    }
+}
