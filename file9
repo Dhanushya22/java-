@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        int m1 = sc.nextInt();
+        int n1 = sc.nextInt();
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int remainingApples = (m + m1 - x);
+        int remainingOranges = (n + n1 - y);
+        System.out.println(remainingApples + " " + remainingOranges);
+        
+        sc.close();
+    }
+}
